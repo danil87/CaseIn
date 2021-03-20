@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Список сотрудников {% endblock %}
+
+{% block content %}
+
+<h1 class="h-sotrud">Список новых сотрудников</h1><br>
+
+    <div class="sotrud-str">{% for el in search_list %}
+        <div class="alert alert-warning">
+            <h3>{{ el.name }} {{el.surname}}</h3>
+            <p>{{el.dolznost}}</p>
+            <div class="cht"> <a href="{% url 'panels' el.id%}" class="cht">Доп. информация</a></div>
+        </div>
+    {% endfor %}
+
+<a href="/nav" class="floating-button sotrud-btn"><div class="back">Вернуться на главную</div></a>
+    </div>
+{% endblock %}

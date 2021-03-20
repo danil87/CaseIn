@@ -1,0 +1,22 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %} Главная страница {% endblock %}
+
+
+
+
+
+{% block content %}
+
+<form action="{% url 'search' %}" method="get">
+  <input type="search" placeholder="Введите свой id" name="q" class="form-control" required="" >
+  <button type="submit" class="floating-button">
+    <span class="" aria-hidden="true"></span>
+  </button>
+</form>
+
+
+<a href="/begin" class="floating-button">Начнем работу!</a>
+
+{% endblock %}

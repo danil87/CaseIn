@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Личный кабинет {% endblock %}
+
+{% block content %}
+<h1>Личный кабинет</h1>
+    {% for el in std %}
+            {% if el.username == user.username %}
+<div class="spisok-lk">
+    <span class="em">E-mail: {{el.username}}</span><br><br>
+    <span class="name-lk">Имя: {{el.name}}</span><br><br>
+    <span class="fam-lk">Фамилия: {{el.surname}}</span><br><br>
+    <span class="dolg-lk">Должность: {{el.dolznost}}</span><br><br>
+    <span class="zad-lk">Задание на месяц:</span>
+                    <div class="contr-lk"><ol class="qwer spisok_lk">
+                        <li class="qwert">{{el.Zadanie1}}</li>
+                        <li class="qwert">{{el.Zadanie2}}</li>
+                        <li class="qwert">{{el.Zadanie3}}</li>
+                        <li class="qwert">{{el.Zadanie4}}</li>
+                    </ol>
+                        </div>
+            {% endif %}
+    {% endfor %}
+</div>
+<a href="/begin"><button class="floating-button backlk-btn">Назад</button></a>
+{% endblock %}

@@ -1,0 +1,16 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %} {{activity.title}} {% endblock %}
+
+{% block content %}
+
+<h1>{{activity.title}}</h1><br>
+<p><b>Дата публикации: </b>{{activity.date}}</p>
+<p class="glv">{{activity.full_text}}</p>
+
+<a href="/news" class="floating-button"><div class="back">Вернутся к новостям</div></a>
+
+
+
+{% endblock %}

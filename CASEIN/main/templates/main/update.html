@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Редактирование  {% endblock %}
+
+{% block content %}
+{% if request.user.is_staff %}
+<h1>Редактирование данных сотрудника</h1>
+<form method="post">
+            {% csrf_token %}
+            {{form.name}}<br>
+            {{form.surname}}<br>
+            {{form.dolznost}}<br>
+            {{form.Zadanie1}}<br>
+            {{form.Zadanie2}}<br>
+            {{form.Zadanie3}}<br>
+            {{form.Zadanie4}}
+        <span>{{error}}</span>
+
+<br>
+    <div class="hh"><button class="floating-button" type="submit"  >Обновить</button></div>
+
+</form>
+{% endif %}
+{% endblock %}

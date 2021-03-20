@@ -1,0 +1,547 @@
+body{
+    background-color: white;
+    
+}
+
+html {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+body{
+    margin: 0;
+    font-family: 'Montserat', sans-serif;
+
+ }
+
+.logo{
+    margin-top: -75px;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #2b2a2c;
+}
+
+.robot{
+    margin-left: 15%;
+    margin-top: 3%;
+    float: left;
+
+}
+.obratno{
+    margin-top: -10em;
+}
+.redactirovat{
+    margin-top: -10em;
+}
+   
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 9em;
+    margin-left: 1em;
+    width: 280px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background:white;
+    border: 1px solid black;
+    border-width: 0.5px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.floating-button:hover {
+    background: #33e8dc;
+    box-shadow: 0 15px 20px #a4fcf6;
+    color: white;
+    transform: translateY(-7px);
+    
+}
+
+.reg{
+    margin-top: 8em;
+    margin-right: 25em;
+    float:right;
+    font-size: 20px;
+}
+
+
+::-moz-placeholder {
+    color: #ced9d8;
+}
+::-webkit-input-placeholder {
+    color:#ced9d8;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 7em;
+
+}
+
+.alert-warning{
+    margin-right: 16.5em;
+    float: right;
+    width: 400px;
+    
+    text-align: center;
+
+}
+
+h3{
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.alert{
+    background-color: #e3f8ff;
+    margin-bottom: 10px;
+    
+}
+
+.nn{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 6.5em;
+    color: steelblue;
+}
+
+.cht{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.cht:hover{
+    color: black;
+}
+
+.glv{
+    margin-right: 10em;
+}
+
+.back{
+    font-size: small;
+
+}
+
+.group {
+  position: relative;
+  margin-top: 45px;
+  margin-left: 40em;
+
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+
+input:focus ~ label, input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #5264AE;
+}
+
+
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before, .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+
+.hh{
+    margin-top: -2em;
+    float: right;
+    margin-right: 25em;
+}
+@media screen and (max-device-width:1000px){
+    .hh{
+    margin-top: -2em;
+    float: right;
+    margin-right: 18em;}
+    .news-str{
+    margin-right: -10em;
+    position: absolute;
+}
+.alert-warning{
+    margin-right: 0em;
+}
+h3{
+    font-size: 15px;
+}
+.floating-button{
+    margin-right: -10em;
+}
+.obratno{
+    margin-top: -10em;
+}
+.redactirovat{
+    margin-top: -10em;
+}
+    /*Далее остальные стили*/
+}
+@media screen and (max-device-width:320px){
+.alert-warning{
+    margin-right: -3em;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+h3{
+    font-size: 14px;
+}
+.floating-button{
+    margin-right: -13em;
+}
+}
+
+button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+
+.endreg{
+margin-top: 20px;
+text-allign: center;
+font-size: large;
+
+}
+
+.bak{
+float:right;
+margin-top: -10em;
+margin-right: 20em;
+}
+
+
+
+
+
+@media screen and (min-width: 1280px){
+main{
+width:1280px;}
+.first-button{
+width: 400px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 65px;
+}
+.reg-button, .auth-button{
+margin-top: 5em;}
+.h-begin{
+width:100%;
+}
+.next-button{
+margin-top:2em;
+}
+.log-button{
+margin-top:2em
+}
+.ren-button{
+margin-top:0em;
+margin-left:1em;
+}
+.h-auth{
+margin-left: 0;
+    margin-right: 13em;}
+.h-begin{
+width: 100%;
+}
+.navig-btn, .lk-btn{
+margin-top:5em;
+}
+.h2-ren{
+margin-left:2em;}
+.h2-wel{
+width:100%;
+margin-left:3em;}
+}
+
+
+
+
+@media screen and (max-width: 1199px){
+main{
+width:960px;}
+.first-button{
+margin-left: 3em;
+    margin-bottom: 5em;
+    margin-top: 7em;
+}
+.reg-button, .auth-button{
+margin-left:6em;
+margin-top:1em;
+}
+.h-begin{
+margin-top: 10px;
+    width: 100%;}
+.next-button{
+margin-top:2em;
+}
+.h-next{
+width:100%;
+margin-left:0;
+}
+.log-button{
+margin-top: 2em;
+}
+.ren-button{
+margin-top:0em;
+margin-left:21em;
+}
+.h-ren{
+width:100%;
+}
+.navig-btn, .lk-btn{
+margin-top:2em;
+}
+.back-btn{
+margin-top:3em;
+}
+.h2-ren{
+margin-left:2em;}
+.h2-wel{
+width:100%;
+margin-left:3em;}
+.backlk-btn{
+margin-top:5em;
+}
+}
+
+
+
+
+@media screen and (max-width: 991px){
+main{
+width:720px;}
+.first-button{
+margin-bottom: 30em;
+margin-top: 5em}
+.reg-button, .auth-button{
+margin-top: 1em;
+    margin-left: 3em;}
+    .next-button{
+margin-left:16em;
+margin-top: 1em;
+}
+.h-next{
+width:100%;
+}
+.h-auth{
+width:100%;
+}
+.h-ren{
+width:100%;
+}
+input{
+margin-left:21em;
+}
+.ren-button{
+margin-left:17em;
+}
+.log-button{
+margin-left: 1em;}
+.h-dop{
+margin-left: 15em;
+}
+.navig-btn, .lk-btn{
+margin-top:1em;
+}
+.h2-ren{
+margin-left:5em;}
+.endreg-btn{
+margin-top: 1em;
+    margin-left: 3em;
+}
+.h-endreg{
+width:100%;
+}
+.h2-wel{
+width:100%;
+margin-left:3em;}
+.backlk-btn{
+margin-top:2em;
+margin-left:0;
+}
+.backglav-btn, .karglav-btn{
+margin-left:3em;
+}
+}
+
+
+@media screen and (max-width: 767px){
+main{
+width:540px;}
+.first-button{
+margin-bottom:10em;
+margin-top:3em;
+}
+}
+.spisok-lk{
+margin-left: auto;
+    margin: auto;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #2b2a2c;
+    margin-top: 1em;
+    line-height: 1em;
+    text-align:left;
+}
+.em, .name-lk, .fam-lk, .dolg-lk, .zad-lk{
+padding: 0.66rem 2rem 0.66rem 2rem;
+    border: 2px solid #2b2a2c;
+    border-radius: 20px;
+}
+.qwer{
+padding: 1rem 2rem 2rem 3rem;
+    border: 2px solid #2b2a2c;
+    border-radius: 20px;
+    width:50%;
+    margin-left:19em;
+}
+
+
+
+@media screen and (max-width: 575px){
+main{
+width:100%;}
+.robot{
+width:300px;
+height:400px;
+margin: 0 20% 0 20%;
+}
+.next-button{
+margin-left: 3em;
+}
+input{
+margin-left:3em;
+}
+.log-button{
+margin-left: 3em;
+}
+.h-dop{
+margin-left:2em;
+}
+.ren-button{
+margin-left:3em;
+}
+.h-begin{
+width:100%;
+    margin-left: 0;
+}
+.navig-btn, .lk-btn, .back-btn{
+margin-left:3em;
+}
+.h2-ren{
+margin-left:2em;}
+.h-endreg{
+width: 100%;}
+.endreg-btn{
+margin-top:3em;
+margin-left:75px;
+}
+.h2-wel{
+width:100%;
+margin-left:3em;}
+.spisok-lk{
+font-size: 1em;
+}
+.backlk-btn{
+margin-left:3em;
+}
+.spisok-lk{
+margin-left:0;
+font-size:1em;
+}
+.em, .name-lk, .fam-lk, .dolg-lk, .zad-lk{
+padding: 0.66rem 1rem 0.66rem 1rem;
+    border: 2px solid #2b2a2c;
+    border-radius: 20px;
+    line-height: 2em;
+    margin-left:1em;
+}
+.contr-lk{
+margin-top:1;
+}
+.news-str{
+    width: 50%;
+    margin-left: 3000em;
+    position: relative;
+}
+.spisok_lk{
+margin-left:1em;
+}
+.h-news{
+width:100%;
+}
+.h-sotrud{
+width:100%;
+}
+.sotrud-str{
+    padding-right: 15em;
+    position: absolute;
+}
+.sotrud-btn{
+margin-top:1em;
+margin-left:2em;
+}
+}
+

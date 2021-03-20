@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{panel.name}} {{panel.surname}} {% endblock %}
+
+{% block content %}
+
+<h1>{{panel.name}} {{panel.surname}}</h1><br>
+<p><b>Должность: </b>{{panel.dolznost}}</p>
+<p><b>Заработная плата: </b>{{panel.zp}}</p>
+<p><b>Задание 1: </b>{{panel.Zadanie1}}</p>
+<p><b>Задание 2: </b>{{panel.Zadanie2}}</p>
+<p><b>Задание 3: </b>{{panel.Zadanie3}}</p>
+<p><b>Задание 4: </b>{{panel.Zadanie4}}</p>
+<div class="obratno">
+    <a href="/sotrud" class="floating-button"><div class="back">Обратно</div></a></div>
+<div class="redactirovat">
+    <a href="{% url 'sotrud-update' panel.id %}" class="floating-button"><div class="back">Редактировать</div></a></div>
+
+
+
+{% endblock %}

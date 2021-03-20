@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="static/main/css/css.css">
+</head>
+<body>
+    <div class="name">
+        <h1 class="h-glav">Главная страница</h1>
+    </div>
+    <div class="contant glav-cont">
+        <a href="/"><img src="{% static 'main/img/quest.png' %}" width="30%" height="30%" alt="robot" class="robot glav-robot"></a>
+        <div class="xyz">
+            <a href="news/"><button class="btn" >Новости</button></a>
+            <a href="/bezops"><button class="btn" >Политика безопасности</button></a>
+            <a href="/history"><button class="btn" >История компании</button></a>
+            <a href="/tech"> <button class="btn" href="#">Стратегия</button></a>
+            <a href="/karier_btn"><button class="btn karglav-btn" href="#">Карьерный рост</button></a>
+            {% if request.user.is_staff %}
+                <a href="/sotrud"><button class="btn" href="#">Сотрудники</button></a>
+            {% endif %}
+            <a href="/begin"><button class="btn backglav-btn" href="#">Вернуться в начало</button></a>
+
+        </div>
+    </div>
+    
+</body>
+</html>

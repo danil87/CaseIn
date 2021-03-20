@@ -1,0 +1,29 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %} Выбор авторизации {% endblock %}
+
+
+
+
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+<h2 class="h2-wel">Добро пожаловать, {% for el in std %}
+                            {% if el.username == user.username %}
+                                    {{el.name}}
+                            {% endif %}
+                        {% endfor %}</h2>
+<div>
+    <a href="/nav"><button class="floating-button navig-btn" >Навигация</button></a></div>
+<div>
+    <a href="/lklk"><button class="floating-button lk-btn" >Личный кабинет</button></a></div>
+<a href="/logout"><button class="floating-button back-btn" >Выйти</button></a>
+{% else %}
+<h1 class="h-begin">Зарегистрируйтесь или войдите в систему</h1>
+<div>
+    <a href="/register"><button class="floating-button reg-button" >Регистрация</button></a></div>
+<a href="/userlogin"><button class="floating-button auth-button" >Авторизация</button></a>
+{% endif %}
+{% endblock %}

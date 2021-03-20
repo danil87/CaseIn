@@ -1,0 +1,28 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %} Новости для сотрудников {% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+<h1 class="h-news">Новости и мероприятия</h1><br>
+    <div class="news-str">{% if news %}
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+                <a href="{% url 'news-detail' el.id %}" class="cht">Читать подробнее</a>
+            </div>
+        {% endfor %}
+        {% else %}
+        <p class="nn">Новостей нет!</p>
+        {% endif %}
+
+        <div class="bak"><a href="/nav" class="floating-button">Обратно</a></div>
+    </div>
+{% endblock %}
